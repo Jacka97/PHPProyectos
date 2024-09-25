@@ -10,7 +10,7 @@
     <?php
     $num1 = 10;
     $num2 = 20;
-    function intercambia(&$a, &$b){ // La & permite que el valor de la variable sea sustituible por otro
+    function intercambia(&$a, &$b){ // La & permite que el valor de la variable sea sustituible por otro, sin necesidad de returns
         $temp = $b;
         $b = $a;
         $a = $temp;
