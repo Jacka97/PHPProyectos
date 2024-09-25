@@ -17,6 +17,7 @@
             }else{
                 echo "$i, ";
             }
+
         }
     }
     function cuenta($a, $b){
