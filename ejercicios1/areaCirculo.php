@@ -10,6 +10,12 @@
     $radio = 3.5;
     define('PI', 3.1416);
     $area = PI * sqrt($radio);
+    function toFixed($number, $decimals) {
+        return number_format($number, $decimals, '.', "");
+      }
+      
+    $area = toFixed($area, 4);
+      
     echo "El area del circulo es $area";
     ?>
 </body>
