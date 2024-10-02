@@ -1,4 +1,0 @@
-Nombre: Daniel
-Apellidos: Zaragoza Altarriba
-Dirección: Jeronimo de Montsoriu 78
-Nacionalidad: Español
