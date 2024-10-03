@@ -16,6 +16,7 @@
 
     
     ksort($coches); // Ordenar el array por matrícula (clave)
+    
     foreach ($coches as $matricula => $datos) {
         echo "<h2>Matrícula: $matricula</h2>";
         echo "<p>Marca: " . $datos['marca'] . "</p>";
