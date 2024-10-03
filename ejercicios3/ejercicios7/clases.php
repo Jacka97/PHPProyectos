@@ -17,6 +17,9 @@
   $persona->Mostrar();
   echo "<h2>Estudiante</h2>";
   $estudiante->Mostrar();
+  $persona->setDNI("9999999999H");
+  echo "<h2>Persona Modificada</h2>";
+  $persona->Mostrar();
   ?>
   
 </body>
