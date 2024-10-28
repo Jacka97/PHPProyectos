@@ -1,0 +1,57 @@
+<!--- 403validacion.php: A partir del formulario anterior, introduce validaciones en HTML
+     mediante el atributo required de los campos (uso los tipos adecuados para cada campo),
+      y en comprueba los tipos de los datos y que cumplen los valores esperados (por ejemplo, 
+      en los checkboxes que los valores recogidos forman parte de todos los posibles). Puedes probar 
+      a pasarle datos erroneos via URL y comprobar su comportamiento.
+Tip: Investiga el uso de la función filter_var. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de envío por POST</h1>
+    <form action="402server.php" method="post">
+        <label for="nombre">Nombre y Apellidos:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="url">URL página personal:</label>
+        <input type="url" id="url" name="url"><br>
+        
+        <label for="convi">Número de convivientes en el domicilio:</label>
+        <input type="number" id="convi" name="convi" required><br>
+        
+        <label>Sexo:</label><br>
+        <label for="sexo_hombre">Hombre</label>
+        <input type="radio" id="sexo_hombre" name="sexo" value="hombre"><br>
+        <label for="sexo_mujer">Mujer</label>
+        <input type="radio" id="sexo_mujer" name="sexo" value="mujer"><br>
+
+        <label for="aficiones">Aficiones</label><br>
+        <label for="leer">Leer</label>
+        <input type="checkbox" id="leer" name="aficiones[]" value="leer"><br>
+        <label for="cantar">Cantar</label>
+        <input type="checkbox" id="cantar" name="aficiones[]" value="cantar"><br>
+        <label for="reir">Reir</label>
+        <input type="checkbox" id="reir" name="aficiones[]" value="reir"><br>
+        <label for="dormir">Dormir</label>
+        <input type="checkbox" id="dormir" name="aficiones[]" value="dormir"><br>
+        
+        <label for="opciones">Menú favorito:</label>
+        <select id="opciones" name="opciones">
+            <option value="1">Opción 1</option>
+            <option value="2">Opción 2</option>
+            <option value="3">Opción 3</option>
+            <option value="4">Opción 4</option>
+        </select>
+
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
